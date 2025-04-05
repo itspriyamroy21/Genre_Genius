@@ -1,0 +1,32 @@
+import React from 'react';
+import './Navbar.css';
+import cart_icon from '../Assets/cart_icon.png';
+
+const Navbar = () => {
+  return (
+    <div className='navbar'>
+      <div className="nav-logo">
+        <div style={{
+          width: '40px',
+          height: '40px',
+          marginRight: '10px',
+          backgroundImage: 'url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSI4IiBmaWxsPSIjMkVjYzcxIi8+CiAgPHBhdGggZD0iTTE4IDE2SDIyVjI0SDI4VjI4SDIyVjM2SDE4VjI4SDEyVjI0SDE4VjE2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==")',
+          backgroundSize: 'contain'
+        }}/>
+        <p>SURAKSHANIKETAN</p>
+      </div>
+      <ul className="nav-menu">
+        <li>Shop</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Kids</li>
+      </ul>
+      <div className="nav-login-cart">
+        <button>Login</button>
+        <img src={cart_icon} alt="cart" />
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
