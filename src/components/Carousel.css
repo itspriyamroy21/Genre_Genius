@@ -1,0 +1,8 @@
+.black-icon {
+  filter: invert(1) brightness(2);
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+color: black !important;
+}
